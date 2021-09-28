@@ -98,7 +98,7 @@ async def on_snip_list(event):
     await event.edit(message)
 
 
-@register(outgoing=True, pattern=r"^\.remsnip (\w*)")
+@register(outgoing=True, pattern=r"^\.snipd (\w*)")
 async def on_snip_delete(event):
     """For .remsnip command, deletes a snip."""
     try:
